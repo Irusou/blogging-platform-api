@@ -1,0 +1,21 @@
+{
+  "name": "bloggin-platform-api",
+  "version": "1.0.0",
+  "description": "https://roadmap.sh/projects/blogging-platform-api",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --env-file .env --watch src/http/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.3",
+    "@types/node": "^22.7.4",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "mongoose": "^8.7.0"
+  }
+}
