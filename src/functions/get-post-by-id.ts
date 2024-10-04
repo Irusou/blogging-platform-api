@@ -1,7 +1,9 @@
 import { BlogPost } from '../models/blog'
 
 export async function getPostById(id: string) {
-  const post = await BlogPost.find({ id })
+  console.log(id)
+
+  const post = await BlogPost.findById({ _id: id })
   console.warn(post)
   return post
 }
