@@ -6,6 +6,7 @@
 		"module": "node16",
 		"target": "ES2022",
 		"strict": true,
+		"outDir": "./dist",
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"moduleResolution": "Node16"
