@@ -9,12 +9,22 @@ POST http://localhost:3000/posts
 Content-Type: application/json
 
 {
-  "title": "test",
+  "title": "test2",
   "content":"some random content",
   "category":"Testing",
-  "tags": ["Test", "API"]
+  "tags": []
 }
 
 ### UPDATE POST
+PUT http://localhost:3000/posts/670016b0d5ab8b5466b0d88e
+Content-Type: application/json
+
+{
+  "title": "test2",
+  "content":"edited content",
+  "category":"Testing",
+  "tags": ["Edit"]
+}
 
 ### DELETE POST
+DELETE http://localhost:3000/posts/670016b0d5ab8b5466b0d88e

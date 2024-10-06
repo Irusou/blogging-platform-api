@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { type Express } from 'express'
 import mongoose from 'mongoose'
 import { blogPostRouter } from '../routes/blog-posts-routes'
 import { port, uri } from './../env'
@@ -9,9 +9,8 @@ async function main() {
 
     await mongoose.connect(uri, { dbName: 'blogs' })
 
-    const app = express()
+    const app: Express = express()
     app.use(express.json())
-
     app.get('/', (_req, res) => {
       res.send('Blog Platform API')
     })

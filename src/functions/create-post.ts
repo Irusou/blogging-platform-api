@@ -1,6 +1,6 @@
 import { BlogPost } from '../models/blog'
 
-type Post = {
+export type Post = {
   title: string
   content: string
   category: string
