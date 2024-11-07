@@ -16,14 +16,14 @@ Content-Type: application/json
 }
 
 ### UPDATE POST
-PUT http://localhost:3000/posts/670016b0d5ab8b5466b0d88e
+PUT http://localhost:3000/posts/672cf011e310d08f274504b5
 Content-Type: application/json
 
 {
-  "title": "test2",
-  "content":"edited content",
+  "title": "testing the api once more3",
+  "content":"the content for today is testing my amazing api 😁",
   "category":"Testing",
-  "tags": ["Edit"]
+  "tags": ["random", "testing"]
 }
 
 ### DELETE POST
