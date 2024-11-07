@@ -40,7 +40,7 @@ router.post('/', validateBody, async (req: Request, res: Response) => {
   try {
     const { title, content, category, tags } = req.body
     const newPost = await createPost({ title, content, category, tags })
-    if (!post) {
+    if (!newPost) {
       throw Error()
     }
     res.status(201).json({ newPost })

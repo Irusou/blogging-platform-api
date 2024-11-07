@@ -9,8 +9,8 @@ POST http://localhost:3000/posts
 Content-Type: application/json
 
 {
-  "title": "test2",
-  "content":"some random content",
+  "title": "testing the api once more2",
+  "content":"the content for today is testing my amazing api 😁",
   "category":"Testing",
   "tags": []
 }
