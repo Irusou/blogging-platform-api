@@ -1,4 +1,5 @@
-import express, { type Express, Request, Response } from 'express'
+import cors from 'cors'
+import express, { type Express, type Request, type Response } from 'express'
 import mongoose from 'mongoose'
 import { blogPostRouter } from '../routes/blog-posts-routes'
 import { port, uri } from './../env'
@@ -11,6 +12,7 @@ async function main() {
 
     const app: Express = express()
     app.use(express.json())
+    app.use(cors())
     app.get('/', (_req: Request, res: Response) => {
       res.send('Blog Platform API')
     })
